@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles\main.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="intro">
+        <h1 class="intro__heading">Learn to code by watching others</h1>
+
+        <p class="intro__text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="form__section">
+        <div class="promotion">
+          <p class="promotion__text">
+            <span class="promotion__trial">Try it free 7 days</span>
+            then $20/mo. thereafter
+          </p>
+        </div>
+  
+        <form class="form"  action="">
+          <label for="firstName" aria-label="first name"></label>
+          <input
+            class="form__input form__input--first"
+            type="text"
+            placeholder="First Name"
+            aria-placeholder="First Name"
+            id="firstName"
+          />
+  
+          <label for="lastName" aria-label="last name"></label>
+          <input
+            class="form__input form__input--last"
+            type="text"
+            placeholder="Last Name"
+            aria-placeholder="Last Name"
+            id="lastName"
+          />
+  
+          <label for="email" aria-label="email"></label>
+          <input
+            class="form__input form__input--email"
+            type="email"
+            placeholder="Email Address"
+            aria-placeholder="Email Address"
+            id="email"
+          />
+  
+          <label for="password" aria-label="password"></label>
+          <input
+            class="form__input form__input--password"
+            type="password"
+            placeholder="Password"
+            aria-placeholder="Password"
+            id="password"
+          />
+  
+          <button type="submit" class="form__button">
+            claim your free trial
+          </button>
+  
+          <p class="form__disclaimer">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="form__disclaimer--terms">Terms and Services</a>
+          </p>
+        </form>
+
+      </div>
+      
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/perezjprz19"
+          target="_blank"
+          >Jessica Shellenhamer</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

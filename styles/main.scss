@@ -1,0 +1,155 @@
+//Global Formats
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+
+body {
+  @include flexCenter;
+  @include myfontReg;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-size: cover;
+  background-color: $primary_1;
+  line-height: 1.4em;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+main {
+  @include flexCenter;
+  min-height: 100vh;
+}
+//Intro Text
+.intro {
+  @include flexCenter;
+  text-align: center;
+  color: white;
+  margin: 0 2em 3em;
+
+  .intro__heading {
+    @include myfontBold;
+    line-height: 1.4em;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  .intro__text {
+    font-size: 1rem;
+  }
+}
+//Promotion Box
+
+.promotion {
+  @include flexCenter;
+  background-color: $blue_1;
+  color: white;
+  border-radius: 0.5em;
+  margin: 0 2.8em 1.5em;
+  padding: 1em 2em;
+  box-shadow: 0em 0.4em 0.1em hsla(249, 10%, 26%, 0.2);
+
+  .promotion__text {
+    text-align: center;
+    width: 95%;
+  }
+  .promotion__trial {
+    @include myfontSemi;
+  }
+}
+
+//Form
+
+.form {
+  @include flexCenter;
+  background-color: white;
+  margin: 0 2.8em;
+  min-width: 75%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  box-shadow: 0em 0.4em 0.1em hsla(249, 10%, 26%, 0.2);
+  
+
+  .form__input {
+    @include myfontSemi;
+    margin-bottom: 1em;
+    min-height: 3em;
+    min-width: 100%;
+    border-radius: 0.2em;
+    border: 1px solid hsla(246, 25%, 77%, 0.4);
+    color: $blue_2;
+    padding: 1em;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $blue_1;
+    }
+  }
+
+  .form__button {
+    @include myfontSemi;
+    margin: 0.5em;
+    min-width: 100%;
+    background-color: $primary_2;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0em 0.4em 0.1em hsl(154, 59%, 45%);
+    cursor: pointer;
+
+    &:hover {
+      filter: opacity(0.7);
+    }
+  }
+
+  .form__disclaimer {
+    color: $blue_3;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+
+    .form__disclaimer--terms {
+      @include myfontSemi;
+      color: $primary_1;
+      text-decoration: none;
+    }
+  }
+}
+
+.attribution {
+  font-size: 0.688em;
+  text-align: center;
+  color: white;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/*######################################################################
+                                DESKTOP
+######################################################################*/
+
+@media screen and (min-width: 60em) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-size: contain;
+  }
+  main {
+    flex-direction: row;
+  }
+
+  .intro {
+    text-align: left;
+    max-width: 35%;
+
+    .intro__heading {
+      align-self: flex-start;
+      font-size: 3rem;
+      line-height: 1em;
+    }
+  }
+}

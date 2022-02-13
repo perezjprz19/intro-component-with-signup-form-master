@@ -1,0 +1,29 @@
+//font mixins
+
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin myfontReg {
+    font-family: $myfont;
+    font-weight: 400;
+}
+
+@mixin myfontMed {
+    font-family: $myfont;
+    font-weight: 500;
+}
+
+@mixin myfontSemi {
+    font-family: $myfont;
+    font-weight: 600;
+}
+
+@mixin myfontBold {
+    font-family: $myfont;
+    font-weight: 700;
+}
+
