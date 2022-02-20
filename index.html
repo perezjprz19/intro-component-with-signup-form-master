@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles\main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
@@ -34,8 +34,8 @@
             then $20/mo. thereafter
           </p>
         </div>
-  
-        <form class="form"  action="">
+
+        <form class="form" action="">
           <label for="firstName" aria-label="first name"></label>
           <input
             class="form__input form__input--first"
@@ -43,8 +43,10 @@
             placeholder="First Name"
             aria-placeholder="First Name"
             id="firstName"
+            name="firstname"
+            required
           />
-  
+
           <label for="lastName" aria-label="last name"></label>
           <input
             class="form__input form__input--last"
@@ -52,8 +54,10 @@
             placeholder="Last Name"
             aria-placeholder="Last Name"
             id="lastName"
+            name="lastname"
+            required
           />
-  
+
           <label for="email" aria-label="email"></label>
           <input
             class="form__input form__input--email"
@@ -61,8 +65,10 @@
             placeholder="Email Address"
             aria-placeholder="Email Address"
             id="email"
+            name="email"
+            required
           />
-  
+
           <label for="password" aria-label="password"></label>
           <input
             class="form__input form__input--password"
@@ -70,20 +76,18 @@
             placeholder="Password"
             aria-placeholder="Password"
             id="password"
+            name="password"
+            required
           />
-  
-          <button type="submit" class="form__button">
-            claim your free trial
-          </button>
-  
+
+          <button class="form__button">claim your free trial</button>
+
           <p class="form__disclaimer">
             By clicking the button, you are agreeing to our
             <a href="#" class="form__disclaimer--terms">Terms and Services</a>
           </p>
         </form>
-
       </div>
-      
     </main>
 
     <footer>
@@ -99,5 +103,7 @@
         >.
       </p>
     </footer>
+
+    <script src="scripts/validation.js" />
   </body>
 </html>
