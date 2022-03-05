@@ -1,0 +1,20 @@
+{
+  "name": "intro-component-with-signup-form-master",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch ./styles/main.scss:./styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perezjprz19/intro-component-with-signup-form-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perezjprz19/intro-component-with-signup-form-master/issues"
+  },
+  "homepage": "https://github.com/perezjprz19/intro-component-with-signup-form-master#readme"
+}
