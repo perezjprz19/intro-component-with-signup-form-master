@@ -35,7 +35,8 @@
           </p>
         </div>
 
-        <form class="form" action="">
+        <form class="form" novalidate action="" method = "">
+          
           <label for="firstName" aria-label="first name"></label>
           <input
             class="form__input form__input--first"
@@ -46,6 +47,8 @@
             name="firstname"
             required
           />
+
+          <span aria-live = "polite"></span>
 
           <label for="lastName" aria-label="last name"></label>
           <input
@@ -58,6 +61,8 @@
             required
           />
 
+          <span aria-live = "polite"></span>
+
           <label for="email" aria-label="email"></label>
           <input
             class="form__input form__input--email"
@@ -69,6 +74,8 @@
             required
           />
 
+          <span aria-live = "polite"></span>
+
           <label for="password" aria-label="password"></label>
           <input
             class="form__input form__input--password"
@@ -79,6 +86,8 @@
             name="password"
             required
           />
+
+          <span aria-live = "polite"></span>
 
           <button class="form__button">claim your free trial</button>
 
@@ -104,6 +113,6 @@
       </p>
     </footer>
 
-    <script src="scripts/validation.js" />
+    <script src="/scripts/validation.js"></script>
   </body>
 </html>

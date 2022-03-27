@@ -75,15 +75,39 @@ main {
     min-height: 3em;
     min-width: 100%;
     border-radius: 0.2em;
-    border: 1px solid hsla(246, 25%, 77%, 0.4);
     color: $blue_2;
     padding: 1em;
 
     &:hover,
     &:focus {
-      outline: 1px solid $blue_1;
+     outline: 1px solid $blue_1;
+      
+     }
+
+     &:invalid {
+      display:flex;
+      border: 1px solid $primary_1;
+      background-image: url('/images/icon-error.svg');
+      background-repeat: no-repeat;
+      background-position: 95%;
+      color: $primary_1;
     }
+
+    &:valid {
+      border: 1px solid hsla(246, 25%, 77%, 0.4);
+    }
+
   }
+
+.error {
+  display: flex;
+  place-self:end start;
+  color: $primary_1;
+  font-size: 0.9em;
+  font-style:italic;
+  padding-bottom: 1em;
+}
+
 
   .form__button {
     @include myfontSemi;

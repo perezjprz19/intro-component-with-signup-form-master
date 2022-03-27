@@ -140,12 +140,30 @@ main {
   min-height: 3em;
   min-width: 100%;
   border-radius: 0.2em;
-  border: 1px solid rgba(185, 182, 211, 0.4);
   color: #3e3c49;
   padding: 1em;
 }
 .form .form__input:hover, .form .form__input:focus {
   outline: 1px solid #6055a5;
+}
+.form .form__input:invalid {
+  display: flex;
+  border: 1px solid #ff7a7a;
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  color: #ff7a7a;
+}
+.form .form__input:valid {
+  border: 1px solid rgba(185, 182, 211, 0.4);
+}
+.form .error {
+  display: flex;
+  place-self: end start;
+  color: #ff7a7a;
+  font-size: 0.9em;
+  font-style: italic;
+  padding-bottom: 1em;
 }
 .form .form__button {
   font-family: "poppins", sans-serif;
